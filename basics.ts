@@ -21,3 +21,16 @@ fetch('https://swapi.dev/api/people/1')
     .then((person: Person) => {
         console.log(`Name: ${person.name}, Age: ${person.age ?? 0}, Gender: ${person.gender}`);
     });
+
+// ------------------------------------------
+
+enum Direction {
+  Topo,
+  Esquerda,
+  Direita,
+  Baixo,
+  Cima = "Topo"
+}
+
+console.log(Direction[Direction.Topo])
+console.log(Direction.Cima)
